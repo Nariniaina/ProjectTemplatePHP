@@ -1,0 +1,17 @@
+/* Footer */
+.footer{
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #BBBBBB;
+    text-align: center;
+    background-color: #E9E9E9;
+    padding: 1.6rem 1rem;
+}
+
+.footer p{
+    color: #3A3A3A;
+}
+
+.footer p span{
+    color: #3478FF;
+}
