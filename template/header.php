@@ -6,13 +6,13 @@
                 <h1>EmptyProject<span>.</span></h1>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Project <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <a href="#home" class="nav-link">Project<span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Groups <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <a href="#about" class="nav-link">Groups<span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#menu" class="nav-link">More <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <a href="#menu" class="nav-link">More<span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                 </ul>
             </div>
@@ -27,13 +27,13 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Project <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <a href="#home" class="nav-link"><span class="icon-action"><i class="fas fa-plus-square"></i></span><span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Groups <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">More <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <div class="input-icons">
+                            <input class="nav-search" type="text" id="pwd" name="pwd" placeholder="Search or Jump to ...">
+                            <span class="icon-search"><i class="fas fa-search"></i></span>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
