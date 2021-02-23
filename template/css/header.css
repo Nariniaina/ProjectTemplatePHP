@@ -1,7 +1,21 @@
 /* variable location */
 :root {
+    /* Couleur general du texte */
+    --main-text-color: #000;
+    --secondary-text-color: #3A3A3A;
+    --neutral-text-color: #fff;
+    --bg-text-color: #4d119c;
+    /* Couleur general du design */
     --main-background-color: #292961;
+    --light-background-color: #4B4B7E;
+    --dark-background-color: #1C1C5A;
+    --neutral-backgroud-color: #fff;
     --main-bg-color: #fe1493;
+    /* Space config */
+    --container-fuild-spacing: 2rem;
+    --h1-size: 2.1rem;
+    --h1-span-size: 3rem;
+    --logo-text-space: 1rem;
 }
 
 /* header */
@@ -16,12 +30,13 @@
 
 /* Navigation */
 .nav{
-    padding: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
 }
 
 .container-fluid {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: var(--container-fuild-spacing);
+    padding-left: var(--container-fuild-spacing);
 }
 
 .navigation{
@@ -39,14 +54,14 @@
 .logo h1{
     display: flex;
     align-items: center;
-    font-size: 2.1rem;
-    color: #fff;
-    margin-right: 1rem;
+    font-size: var(--h1-size);
+    color: var(--neutral-text-color);
+    margin-right: var(--logo-text-space);
 }
 
 .logo h1 span{
     color: var(--main-bg-color);
-    font-size: 3rem;
+    font-size: var(--h1-span-size);
 }
 
 
@@ -67,20 +82,20 @@
 
 .nav-link:link,
 .nav-link:visited{
-    color: #D6D6D6;
+    color: #ccc;
     padding: 0.8rem 1rem;
     border-radius: 0.3rem;
     transition: all 300ms ease-in-out;
 }
 
 .nav-link:hover{
-    color: #fff;
-    background-color: #4B4B7E;
+    color: var(--neutral-text-color);
+    background-color: var(--light-background-color);
 }
 
 .nav-link:active{
     color: #4B4B7E;
-    background-color: #fff;
+    background-color: var(--neutral-backgroud-color);
 }
 
 
@@ -116,7 +131,7 @@
     }
 
     .top-nav .logo span{
-        color: #fff;
+        color: var(--neutral-text-color);
     }
 
     .top-nav .close{
@@ -128,7 +143,7 @@
 
     .hamburger{
         display: block;
-        color: #fff;
+        color: var(--neutral-text-color);
         font-size: 2.5rem;
         padding: 0.5rem;
         cursor: pointer;
@@ -149,7 +164,7 @@
     }
 
     .nav-link:hover{
-        color: #fff;
+        color: var(--neutral-text-color);
     }
 }
 
