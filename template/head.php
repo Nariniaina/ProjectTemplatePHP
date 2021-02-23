@@ -9,7 +9,7 @@
     $template_css = 'template.css';
     $font_css = 'poppins.css';
     $font_awesome_css = '/fontawesome/css/all.min.css';
-    $favicon = 'favicon.ico';
+    $favicon = 'favicon-template.ico';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
