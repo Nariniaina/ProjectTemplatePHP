@@ -1,31 +1,39 @@
 <header class="header" id="home">
     <!-- Navigation -->
     <nav class="nav">
-        <div class="navigation container">
+        <div class="navigation container-fluid">
             <div class="logo">
-                <h1>FastFood<span>.</span></h1>
-            </div> 
+                <h1>EmptyProject<span>.</span></h1>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Project <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Groups <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">More <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                    </li>
+                </ul>
+            </div>
             <div class="menu">
                 <div class="top-nav">
                     <div class="logo">
-                        <h1>FastFood<span>.</span></h1>
-                    </div> 
+                        <h1>EmptyProject<span>.</span></h1>
+                    </div>
                     <div class="close">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Project <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">Groups <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#menu" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                        <a href="#menu" class="nav-link">More <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
