@@ -4,6 +4,7 @@
     --main-text-color: #000;
     --secondary-text-color: #3A3A3A;
     --light-text-color: #ccc;
+    --darker-text-color: #a0a0a0;
     --neutral-text-color: #fff;
     --bg-text-color: #4d119c;
     /* Couleur general du design */
@@ -15,7 +16,7 @@
     /* Space configuration */
     --container-fuild-spacing: 2rem;
     --h1-size: 2.1rem;
-    --h1-span-size: 3rem;
+    --h1-span-size: 2.1rem;
     --logo-text-space: 1rem;
 }
 
@@ -29,11 +30,11 @@
     background: var(--main-background-color);
 }
 
-/* Navigation */
+ /* Navigation */
 .nav{
-    padding-top: 0.2rem;
+    padding-top: 0.4rem;
     padding-bottom: 0.5rem;
-}
+ }
 
 .container-fluid {
     padding-right: var(--container-fuild-spacing);
@@ -65,20 +66,34 @@
     font-size: var(--h1-span-size);
 }
 
-
-/* Hide logo */
-.top-nav{
-    display: none;
-}
-
 /* Left bar */
-.nav-list{
+.nav-list-left{
     display: flex;
     align-items: center;
 }
 
+.nav-list-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    display: flex;
+}
+
 .nav-item:not(:last-child){
     margin-right: 0.5rem;
+}
+
+.top-nav .nav-item:first-child{
+    margin-right: 0.5rem;
+}
+
+.nav-link{
+    color: var(--light-text-color);
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem;
+    transition: all 300ms ease-in-out;
 }
 
 .nav-link:link,
@@ -95,27 +110,37 @@
 }
 
 .nav-link:active{
-    color: #4B4B7E;
+    color: var(--light-background-color);
     background-color: var(--neutral-backgroud-color);
 }
-
 
 /* Hamburger */
 .hamburger{
     display: none;
 }
 
+.top-nav{
+    display: none;
+}
+
 /* Nav bar responsivity */
+@media only screen and (max-width: 968px) {
+    .nav-items{
+        display: none;
+    }
+}
+
+.nav-list-right .top-nav .nav-item{
+    background-color: var(--dark-background-color);
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
     .menu{
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        max-width: 40rem;
-        height: 100%;
-        background-color: var(--neutral-backgroud-color);
-        transition: all 500ms ease-in-out;
+        position: relative;
+        left : -100%;
+        transition: all 700ms ease-in-out;
         z-index: 100;
     }
 
@@ -123,74 +148,71 @@
         left : 0;
     }
 
-    .top-nav {
+    .nav-list-right.show{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: var(--main-bg-color);;
-        padding: 0.7rem 1.6rem;
     }
 
-    .top-nav .logo span{
-        color: var(--neutral-text-color);
+    .logo.show{
+        display: none;
     }
 
-    .top-nav .close{
-        font-size: 2.5rem;
-        color: var(--neutral-text-color);
-        padding: 1rem;
-        cursor: pointer;
+    .top-nav.show{
+        display: flex;
     }
 
     .hamburger{
         display: block;
-        color: var(--neutral-text-color);
+        color: var(--neutral-backgroud-color);
         font-size: 2.5rem;
         padding: 0.5rem;
         cursor: pointer;
     }
 
-    .nav-list{
-        flex-direction: column;
-        align-items: start;
-        padding: 1rem 1.6rem;
+    .nav-list-left.show{
+        display: none;
     }
 
-    .nav-link:link,
-    .nav-link:visited{
-        display: block;
-        font-size: 1.7rem;
-        color: #222;
-        padding: 1rem 0;
-    }
-
-    .nav-link:hover{
-        color: var(--neutral-text-color);
+    .nav-list-right{
+        display: none;
     }
 }
 
-/* Font awesome */
+/* Font awesome spacing */
 .icon{
     margin-left: 0.5rem;
+}
+
+.icon-single{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .icon-action{
     margin-right: 0.5rem;
 }
 
+.input-icons{
+    margin-right: 0.5rem;
+}
+
 /* input navigation */
 .nav-search {
-    width: 100%;
-    padding: 12px 20px;
     color: var(--neutral-text-color);
+    height: 4.1rem;
     border: 1px solid var(--light-background-color);
     background-color: var(--light-background-color);
     border-radius: 4px;
     box-sizing: border-box;
+    padding-left: 1.5rem;
+    padding-right: 15rem;
 }
 
 .nav-search::placeholder {
     color: var(--light-text-color);
+}
+
+.nav-search:focus::placeholder {
+    color: var(--darker-text-color);
 }
 
 .nav-search:focus{
@@ -206,5 +228,5 @@
 .icon-search {
     position: absolute;
     transform: translateX(-4rem);
-    padding: 8px;
+    padding: 9px;
 }
