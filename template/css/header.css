@@ -199,6 +199,7 @@
 .nav-search {
     color: var(--neutral-text-color);
     height: 4.1rem;
+    font-size: 1.6rem;
     border: 1px solid var(--light-background-color);
     background-color: var(--light-background-color);
     border-radius: 4px;
