@@ -18,9 +18,11 @@
             </div>
             <div class="menu">
                 <ul class="nav-list-right">
-                    <div class="top-nav">
-                        <li class="close nav-item nav-link">
-                            <span class="icon-single"><i class="fas fa-times"></i></span>
+                    <div class="close top-nav">
+                        <li class="nav-item">
+                            <div class="nav-link">
+                                <span class="icon-single"><i class="fas fa-times"></i></span>
+                            </div>
                         </li>
                     </div>
                     <li class="nav-item">

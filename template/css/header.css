@@ -47,7 +47,7 @@
     justify-content: space-between;
 }
 
-/* Left bar */
+/* Logo */
 .logo{
     display: flex;
     align-items: center;
@@ -96,6 +96,13 @@
     transition: all 300ms ease-in-out;
 }
 
+.nav-link{
+    color: var(--light-text-color);
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem;
+    transition: all 300ms ease-in-out;
+}
+
 .nav-link:link,
 .nav-link:visited{
     color: var(--light-text-color);
@@ -114,7 +121,7 @@
     background-color: var(--neutral-backgroud-color);
 }
 
-/* Hamburger */
+/* Hamburger & Close */
 .hamburger{
     display: none;
 }
@@ -123,17 +130,74 @@
     display: none;
 }
 
+.nav-list-right .top-nav .nav-item{
+    background-color: var(--dark-background-color);
+    margin-right: 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/* Font awesome spacing */
+.icon{
+    margin-left: 0.5rem;
+}
+
+.icon-single{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.icon-action{
+    margin-right: 0.5rem;
+}
+
+.input-icons{
+    margin-right: 0.5rem;
+}
+
+/* input navigation */
+.nav-search {
+    color: var(--neutral-text-color);
+    height: 4.1rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--light-background-color);
+    background-color: var(--light-background-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+}
+
+.nav-search::placeholder {
+    color: var(--light-text-color);
+}
+
+.nav-search:focus::placeholder {
+    color: var(--darker-text-color);
+}
+
+.nav-search:focus{
+    color: var(--main-text-color);
+    background-color: var(--neutral-backgroud-color);
+    padding-right: 6rem;
+    transition: all 300ms ease-in-out;
+}
+
+/* search icon */
+.input-icons span{
+    color: var(--light-text-color);
+}
+
+.icon-search {
+    position: absolute;
+    transform: translateX(-4rem);
+    padding: 9px;
+}
+
 /* Nav bar responsivity */
 @media only screen and (max-width: 968px) {
     .nav-items{
         display: none;
     }
-}
-
-.nav-list-right .top-nav .nav-item{
-    background-color: var(--dark-background-color);
-    margin-right: 2rem;
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -175,59 +239,152 @@
     .nav-list-right{
         display: none;
     }
+
+    .logo h1{
+        font-size: 1.8rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1.8rem;
+    }
+
+    .nav-item a{
+        font-size: 1.8rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1.8rem;
+    }
 }
 
-/* Font awesome spacing */
-.icon{
-    margin-left: 0.5rem;
+@media only screen and (max-width: 480px) {
+    .logo h1{
+        font-size: 1.2rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1.2rem;
+    }
+
+    .nav-item a{
+        font-size: 1.2rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1.2rem;
+    }
+
+    .hamburger{
+        font-size: 1.5rem;
+    }
 }
 
-.icon-single{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+@media only screen and (max-width: 411px) {
+    .logo h1{
+        font-size: 1.2rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1.2rem;
+    }
+
+    .nav-item a{
+        font-size: 1.2rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1.2rem;
+    }
+
+    .hamburger{
+        font-size: 1.2rem;
+    }
 }
 
-.icon-action{
-    margin-right: 0.5rem;
+@media only screen and (max-width: 375px) {
+    .logo h1{
+        font-size: 1rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1rem;
+    }
+
+    .nav-item a{
+        font-size: 1rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1rem;
+    }
+
+    .hamburger{
+        font-size: 1rem;
+    }
 }
 
-.input-icons{
-    margin-right: 0.5rem;
+@media only screen and (max-width: 370px) {
+    .logo h1{
+        font-size: 1rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1rem;
+    }
+
+    .nav-item a{
+        font-size: 1rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1rem;
+    }
+
+    .hamburger{
+        font-size: 1rem;
+    }
 }
 
-/* input navigation */
-.nav-search {
-    color: var(--neutral-text-color);
-    height: 4.1rem;
-    font-size: 1.6rem;
-    border: 1px solid var(--light-background-color);
-    background-color: var(--light-background-color);
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding-left: 1.5rem;
-    padding-right: 15rem;
+@media only screen and (max-width: 320px) {
+    .logo h1{
+        font-size: 0.8rem;
+    }
+    
+    .logo h1 span{
+        font-size: 0.8rem;
+    }
+
+    .nav-item a{
+        font-size: 0.8rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 0.8rem;
+    }
+
+    .hamburger{
+        font-size: 0.8rem;
+    }
 }
 
-.nav-search::placeholder {
-    color: var(--light-text-color);
-}
+@media only screen and (max-width: 280px) {
+    .logo h1{
+        font-size: 0.5rem;
+    }
+    
+    .logo h1 span{
+        font-size: 0.5rem;
+    }
 
-.nav-search:focus::placeholder {
-    color: var(--darker-text-color);
-}
+    .nav-item a{
+        font-size: 0.5rem;
+    }
 
-.nav-search:focus{
-    color: var(--main-text-color);
-    background-color: var(--neutral-backgroud-color);
-}
+    .nav-list-right .top-nav .nav-item{
+        font-size: 0.5rem;
+    }
 
-/* search icon */
-.input-icons span{
-    color: var(--light-text-color);
-}
-
-.icon-search {
-    position: absolute;
-    transform: translateX(-4rem);
-    padding: 9px;
+    .hamburger{
+        font-size: 0.5rem;
+    }
 }
