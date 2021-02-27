@@ -25,8 +25,16 @@
                             </div>
                         </li>
                     </div>
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link"><span class="icon-action"><i class="fas fa-plus-square"></i></span><span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-action"><i class="fas fa-plus-square"></i></span><span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <p>Merge request</p>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Assigned to<span>12</span></a>
+                            <a class="dropdown-item" href="#">Review request for you ezea<span>12</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here<span class="pin">12</span></a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#home" class="nav-link"><span class="icon-single"><i class="fas fa-search"></i></span></a>
@@ -39,6 +47,19 @@
                     </li>
                     <li class="nav-item">
                         <a href="#home" class="nav-link"><span class="icon-single"><i class="fas fa-check-square"></i></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown<span class="pin">!</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <p>Merge request</p>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Assigned to</a>
+                            <a class="dropdown-item" href="#">Review request for you ezea</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
