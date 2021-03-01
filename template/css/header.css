@@ -267,7 +267,7 @@
     background-color: var(--status-negatif-color);
 }
 
-.dropdown-toggle .pin{
+.nav-item .pin{
     color: white;
     margin-left: 1.5rem;
     padding-left: 1rem;

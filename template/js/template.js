@@ -1,7 +1,13 @@
 const menu = document.querySelector(".menu")
-const dropdown_up = document.querySelector(".dropdown-toggle")
-const dropdown = document.querySelector(".dropdown-menu")
-const nav = document.querySelector(".nav-link")
+
+const dropdown = document.getElementById("navbarDropdownmenu")
+const dropdown_up = document.getElementById("dropdown-toggle")
+const nav = document.getElementById("navbarDropdown")
+
+const dropdown_up_2 = document.getElementById("dropdown-toggle-2")
+const dropdown_2 = document.getElementById("navbarDropdownmenu-2")
+const nav_2 = document.getElementById("navbarDropdown-2")
+
 const logo = document.querySelector(".logo")
 const navlistleft = document.querySelector(".nav-list-left")
 const navlistright = document.querySelector(".nav-list-right")
@@ -12,8 +18,29 @@ const navClose = document.querySelector(".close")
 const navLeft = menu.getBoundingClientRect().left;
 
 dropdown_up.addEventListener('click', () =>{
-    dropdown.classList.add("show");
-    nav.classList.add("active");
+    if (dropdown.classList.contains('show')) 
+    {
+        dropdown.classList.remove('show');
+        nav.classList.remove("active");
+    }
+    else
+    {
+        dropdown.classList.add('show');
+        nav.classList.add("active");
+    }
+})
+
+dropdown_up_2.addEventListener('click', () =>{
+    if (dropdown_2.classList.contains('show'))
+    {
+        dropdown_2.classList.remove('show');
+        nav_2.classList.remove("active");
+    }
+    else
+    {
+        dropdown_2.classList.add('show');
+        nav_2.classList.add("active");
+    }
 })
 
 navOpen.addEventListener('click', () =>{
