@@ -3,6 +3,7 @@
     <nav class="nav">
         <div class="navigation container-fluid">
             <div class="logo">
+                <img src="http://localhost/ProjectTemplates/template/images/favicon.svg" alt="">
                 <h1>EmptyProject<span></span></h1>
                 <ul class="nav-list-left">
                     <li class="nav-item">
@@ -37,7 +38,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#home" class="nav-link"><span class="icon-single"><i class="fas fa-search"></i></span></a>
+                        <a href="#home" class="nav-link hide-responsivity"><span class="icon-single"><i class="fas fa-search"></i></span></a>
                     </li>
                     <li class="nav-items">
                         <div class="input-icons">

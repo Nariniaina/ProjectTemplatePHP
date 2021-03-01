@@ -1,6 +1,7 @@
 const menu = document.querySelector(".menu")
 const dropdown_up = document.querySelector(".dropdown-toggle")
 const dropdown = document.querySelector(".dropdown-menu")
+const nav = document.querySelector(".nav-link")
 const logo = document.querySelector(".logo")
 const navlistleft = document.querySelector(".nav-list-left")
 const navlistright = document.querySelector(".nav-list-right")
@@ -12,6 +13,7 @@ const navLeft = menu.getBoundingClientRect().left;
 
 dropdown_up.addEventListener('click', () =>{
     dropdown.classList.add("show");
+    nav.classList.add("active");
 })
 
 navOpen.addEventListener('click', () =>{
