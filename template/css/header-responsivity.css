@@ -1,0 +1,209 @@
+/* Nav bar responsivity */
+@media only screen and (max-width: 968px) {
+    .nav-items{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 963px) {
+    .hide-responsivity{
+        display: block;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    .pin{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        position: relative;
+        left : -100%;
+        transition: all 700ms ease-in-out;
+        z-index: 100;
+    }
+
+    .menu.show{
+        left : 0;
+    }
+
+    .nav-list-right.show{
+        display: flex;
+    }
+
+    .logo.show{
+        display: none;
+    }
+
+    .top-nav.show{
+        display: flex;
+    }
+
+    .hamburger{
+        display: block;
+        color: var(--neutral-backgroud-color);
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .nav-list-left.show{
+        display: none;
+    }
+
+    .nav-list-right{
+        display: none;
+    }
+
+    .logo h1{
+        font-size: 1.8rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1.8rem;
+    }
+
+    .nav-item a{
+        font-size: 1.8rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo h1{
+        font-size: 1.2rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1.2rem;
+    }
+
+    .nav-item a{
+        font-size: 1.2rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1.2rem;
+    }
+
+    .hamburger{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .logo h1{
+        font-size: 1.2rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1.2rem;
+    }
+
+    .nav-item a{
+        font-size: 1.2rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1.2rem;
+    }
+
+    .hamburger{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo h1{
+        font-size: 1rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1rem;
+    }
+
+    .nav-item a{
+        font-size: 1rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1rem;
+    }
+
+    .hamburger{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .logo h1{
+        font-size: 1rem;
+    }
+    
+    .logo h1 span{
+        font-size: 1rem;
+    }
+
+    .nav-item a{
+        font-size: 1rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 1rem;
+    }
+
+    .hamburger{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logo h1{
+        font-size: 0.8rem;
+    }
+    
+    .logo h1 span{
+        font-size: 0.8rem;
+    }
+
+    .nav-item a{
+        font-size: 0.8rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 0.8rem;
+    }
+
+    .hamburger{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .logo h1{
+        font-size: 0.5rem;
+    }
+    
+    .logo h1 span{
+        font-size: 0.5rem;
+    }
+
+    .nav-item a{
+        font-size: 0.5rem;
+    }
+
+    .nav-list-right .top-nav .nav-item{
+        font-size: 0.5rem;
+    }
+
+    .hamburger{
+        font-size: 0.5rem;
+    }
+}

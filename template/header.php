@@ -27,8 +27,10 @@
                         </li>
                     </div>
                     <li class="nav-item" id="dropdown-toggle">
-                        <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-action"><i class="fas fa-plus-square"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                        <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="icon-action"><i class="fas fa-plus-square"></i></span>
+                            <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        </a>
                         <div class="dropdown-menu" id="navbarDropdownmenu" aria-labelledby="navbarDropdown">
                             <p>Merge request</p>
                             <div class="dropdown-divider"></div>
@@ -52,7 +54,7 @@
                     </li>
                     <li class="nav-item" id="dropdown-toggle-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown<span class="pin">!</span>
+                            Dropdown<span class="pin">!</span>
                         </a>
                         <div class="dropdown-menu" id="navbarDropdownmenu-2" aria-labelledby="navbarDropdown">
                             <p>Merge request</p>

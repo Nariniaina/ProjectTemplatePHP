@@ -1,0 +1,24 @@
+/* variable location */
+:root {
+    /* Couleur general du texte */
+    --main-text-color: #000;
+    --secondary-text-color: #646464;
+    --light-text-color: #ccc;
+    --darker-text-color: #a0a0a0;
+    --neutral-text-color: #fff;
+    --bg-text-color: #4d119c;
+    /* Couleur general du design */
+    --main-background-color: #292961;
+    --light-background-color: #4B4B7E;
+    --dark-background-color: #1C1C5A;
+    --neutral-backgroud-color: #fff;
+    --darker-background-color: #eeeeee;
+    --main-bg-color: #fe1493;
+    --status-positif-color: #44e04c;
+    --status-negatif-color: #e04444;
+    /* Space configuration */
+    --container-fuild-spacing: 2rem;
+    --h1-size: 2.1;
+    --h1-span-size: 2.1rem;
+    --logo-text-space: 1rem;
+}

@@ -45,3 +45,8 @@ li{
     margin: 0 auto;
     padding: 0 3rem;
 }
+
+.container-fluid {
+    padding-right: var(--container-fuild-spacing);
+    padding-left: var(--container-fuild-spacing);
+}
