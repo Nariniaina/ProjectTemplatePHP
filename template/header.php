@@ -25,6 +25,17 @@
                                 <span class="icon-single"><i class="fas fa-times"></i></span>
                             </div>
                         </li>
+                        <ul class="nav-list-left">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link">Projects<span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">Groups<span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#menu" class="nav-link">More<span class="icon"><i class="fas fa-chevron-down"></i></span></a>
+                            </li>
+                        </ul>
                     </div>
                     <li class="nav-item" id="dropdown-toggle">
                         <a href="#" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
